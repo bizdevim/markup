@@ -39,13 +39,13 @@
   font-size: 1.0833rem;
 }
 
-.item__link {
-  font-weight: 400;
-  font-size: 1.0833rem;
-}
-
 .item__followers {
   font-weight: 400;
   font-size: 1.0833rem;
   letter-spacing: 0.066px;
+}
+
+.item__link {
+  font-weight: 400;
+  font-size: 1.0833rem;
 }
