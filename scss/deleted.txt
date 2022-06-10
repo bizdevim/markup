@@ -1,0 +1,208 @@
+// @media (min-width: 695px) {
+// 	.tabs__buttons {
+// 		button:not(:last-of-type),
+// 		button:not(:first-of-type) {
+// 			margin: 0 21.0.5rem !important;
+// 		}
+// 		button:first-of-type {
+// 			margin: 0 21.0.5rem 0 0 !important;
+// 		}
+// 		button:last-of-type {
+// 			margin: 0 0 0 21.0.5rem !important;
+// 		}
+// 	}
+// }
+
+// @media (max-width: 575px) {
+// 	header {
+// 		svg {
+// 			height: 1.5rem;
+// 		}
+// 	}
+// 	.tags-list {
+// 		font-weight: 400;
+// 		letter-spacing: 0.1px	;
+// 	}
+
+// 	.header-text {
+// 		font-size: 1.25rem;
+// 		letter-spacing: normal;
+// 	}
+// 	.follow-right button:nth-of-type(2) {
+// 		margin: 0 25px;
+// 	}
+// 	.account {
+// 		padding-top: 0.8333rem;
+// 	}
+// 	.company_logo {
+// 		width: 1.0833rem;
+// 		height: 1.0833rem;
+// 		margin-bottom: 1px;
+// 	}
+// 	.panel a {
+// 		font-size: 1.0833rem;
+// 		font-weight: 600;
+// 	}
+// 	.follow-left button:first-of-type {
+// 		height:3.3333rem;
+// 	}
+// 	.tabs__buttons button::after {
+// 		width: 34px;
+// 	}
+// 	.tabs__wrapper {
+// 		padding-top: 0;
+// 	}
+// 	.account > div > div div.username {
+// 		font-size: 1.16048rem;
+// 	}
+
+// 	.follow-left button {
+// 		font-size: 1.0833rem;
+// 	}
+// 	.account > div > div .account_company .company_position,
+// 	.account > div > div .account_company {
+// 		font-size: 12.5px;
+// 	}
+// 	.account > div .account_avatar {
+// 		width: 36px;
+// 		height: 36px;
+// 	}
+// 	.tags {
+// 		&-list {
+// 			font-size: 12.5px;
+// 		}
+// 	}
+// 	.tabs__buttons button {
+// 		font-size: 1.0833rem;
+// 		line-height: 1.0833rem;
+// 	}
+// 	.content .content__item {
+// 		div {
+// 			font-size: 1.0833rem;
+// 			line-height: 1.0833rem;
+// 		}
+// 		div {
+// 			margin-top: 0.5rem;
+// 			font-size: 1.0833rem;
+// 		}
+// 	}
+
+// 	.nav li {
+// 		font-size: 0.8333rem;
+// 	}
+// 	.content .content__item {
+// 		margin-bottom: 1.16048rem;
+// 	}
+// 	.social {
+// 		padding-bottom:3.25rem;
+// 		a svg {
+// 			width: 1.5rem;
+// 			height: 1.5rem;
+// 		}
+// 	}
+// 	.content .location div {
+// 		margin-top:0.33333rem;
+// 	}
+// 	.follow svg {
+// 		height: 1.33333rem;
+// 	}
+// 	.role {
+// 		font-size: 0.8333rem;
+// 		display: flex;
+// 		justify-content: center;
+// 		padding: 00.1667rem;
+// 		padding-bottom:0.1667rem;
+// 	}
+// }
+
+// @media (max-width: 375px) {
+// 	.company_name {
+// 		max-width: 155px;
+// 	}
+// 	.role {
+// 		font-size: 0.75rem;
+// 		line-height: 0.75rem;
+// 		height: 1.25rem;
+// 		min-width: 60px;
+// 		font-weight: 500;
+// 	}
+// 	.content .content__item {
+// 		margin-bottom: 0.8333rem;
+// 	}
+// 	.social {
+// 		padding-bottom: 1.25rem;
+// 		a svg {
+// 			height: 1.4167rem;
+// 			width: 1.4167rem;
+// 		}
+// 	}
+// 	.account > div > div div.username {
+// 		font-size: 1.0833rem;
+// 		margin-bottom:0.25rem;
+// 	}
+// 	.account > div > div .account_company {
+// 		&,
+// 		.company_position {
+// 			font-size: 1rem;
+// 		}
+// 	}
+// 	.social a {
+// 		font-size: 0.75rem;
+// 	}
+// 	.tags-btn {
+// 		position: relative;
+// 		right: -2px;
+// 		svg {
+// 			height: 19px;
+// 			width: 19px;
+// 		}
+// 	}
+// 	.follow-left button {
+// 		font-size: 1rem;
+// 		letter-spacing: 0.4px;
+// 	}
+// 	.company_logo {
+// 		width: 1rem;
+// 		height: 1rem;
+// 	}
+// 	.account > div .account_avatar {
+// 		width: 34px;
+// 		height: 34px;
+// 	}
+// 	.tags-list {
+// 		font-size: 11.5px;
+// 		letter-spacing: 0.5px;
+// 	}
+// 	.tabs__buttons
+// 		button:not(:last-of-type)
+// 		+ .tabs__buttons
+// 		button:not(:first-of-type) {
+// 		margin: 0 1.25rem;
+// 	}
+
+// 	.tabs__buttons button {
+// 		font-weight: 500;
+// 	}
+// 	.tabs__buttons button:first-of-type {
+// 		margin-right: 1.25rem;
+// 	}
+// 	.tabs__buttons button:last-of-type {
+// 		margin-left: 1.25rem;
+// 	}
+// 	.follow-left button:first-of-type {
+// 		padding-right: 0.8333rem;
+// 	}
+// 	.follow svg {
+// 		height: 1.25rem;
+// 	}
+
+// 	header svg {
+// 		height: 1.25rem;
+// 	}
+// 	.account_share__btn svg {
+// 		height
+// @media screen and (-webkit-min-device-pixel-ratio: 0) {
+// 	.content div {
+// 		font-size: 0.8333rem;
+// 	}
+// }

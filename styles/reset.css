@@ -1,0 +1,18 @@
+a:visited,
+a:active,
+a {
+  color: #1682F1;
+  text-decoration: none;
+}
+
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: none;
+}

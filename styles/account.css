@@ -1,0 +1,51 @@
+.content.profile-tab, .content.social-tab {
+  display: none;
+}
+.content.active {
+  display: block;
+}
+
+.social_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.social__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.social__item .item__name {
+  margin-left: 0.8333rem;
+  margin-right: 0.4167rem;
+}
+.social__item.active .item__name,
+.social__item.active .item__followers {
+  color: #232325;
+}
+.social__item div:first-of-type {
+  display: flex;
+  align-items: center;
+}
+
+.item__icon {
+  width: 1.6667rem;
+  height: 1.6667rem;
+}
+
+.item__name {
+  font-weight: 500;
+  font-size: 1.0833rem;
+}
+
+.item__link {
+  font-weight: 400;
+  font-size: 1.0833rem;
+}
+
+.item__followers {
+  font-weight: 400;
+  font-size: 1.0833rem;
+  letter-spacing: 0.066px;
+}
