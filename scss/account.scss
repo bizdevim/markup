@@ -1,12 +1,29 @@
 .content {
 	&.profile-tab,
-	&.social-tab {
+	&.social-tab,
+	&.tab-menu-tab {
 		display: none;
+		padding: 0 1.5rem;
+	}
+	&.tab-menu-tab {
+		padding: 0;
 	}
 	&.active {
 		display: block;
 	}
+	&.invisible {
+		display: none;
+	}
 }
+.content__wrapper {
+	position: relative;
+	font-weight: 500;
+	font-size: 1.16048rem;
+	letter-spacing: 0.0657531px;
+	color: #aeaeb2;
+	padding-bottom: 6.5333rem;
+}
+
 .social_list {
 	display: flex;
 	flex-direction: column;
@@ -23,7 +40,7 @@
 
 	&.active {
 		.item__name,
-		.item__followers {
+		.item__counter {
 			color: #232325;
 		}
 	}
@@ -40,12 +57,58 @@
 	font-weight: 500;
 	font-size: 1.0833rem;
 }
-.item__followers {
+.item__counter {
 	font-weight: 400;
 	font-size: 1.0833rem;
 	letter-spacing: 0.066px;
+	color: #aeaeb2;
 }
 .item__link {
 	font-weight: 400;
 	font-size: 1.0833rem;
+}
+.tab-menu__title {
+	font-weight: 600;
+	font-size: 1.16048rem;
+	letter-spacing: 0.0600113px;
+	color: #232325;
+	display: none;
+	#tab_menu.active ~ & {
+		display: block;
+	}
+}
+.followBtn {
+	.active ~ & {
+		display: none;
+	}
+}
+.tab-menu__item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 1.5rem;
+	transition: 0.2s ease;
+	div:first-of-type {
+		display: flex;
+		align-items: center;
+		.item__title {
+			margin-left: 0.8333rem;
+		}
+	}
+	&:hover {
+		background-color: #f5f5f5;
+	}
+	.item__title {
+		font-weight: 600;
+		font-size: 1.16048rem;
+		letter-spacing: 0.0600113px;
+		color: #232325;
+	}
+}
+
+.tab-menu-tab {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
 }

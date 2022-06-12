@@ -9,7 +9,7 @@ window.addEventListener("resize", (e) => {
 	setSocialMargins();
 });
 const tab_wrapper = document.querySelector(".tabs__buttons");
-const tab_btns = document.querySelectorAll(".tabItem");
+const tab_btns = document.querySelectorAll(".tab-item");
 let tabMargin;
 const setButtonMenuMargins = (e) => {
 	let s = 0;
@@ -164,16 +164,39 @@ followButton.addEventListener("click", (event) => {
 const tab_content = document.querySelectorAll(".content");
 tab_btns.forEach((el) => {
 	el.addEventListener("click", (event) => {
+		tab_menu_button.classList.remove('active');
+		tab_menu.classList.remove('active');
+		tab_menu_button.parentElement.parentElement.classList.remove('active');
 		tab_btns.forEach((el) => {
 			el.classList.remove("active");
 		});
 		tab_content.forEach((el) => {
-			el.classList.remove("active");
+			!el.classList.contains('tab-menu-tab') ?
+				el.classList.remove("active") : null
 		});
 		document
 			.querySelector(`#${el.getAttribute("data-set")}`)
 			?.classList.add("active");
 		el.classList.add("active");
 		el.ariaSelected = true;
+		tab_menu_active = false;
 	});
 });
+
+// Tab sub menu
+const tab_menu_button = document.querySelector('#tab_menu');
+const tab_menu = document.querySelector('.tab-menu-tab')
+let active_tab;
+let tab_menu_active = false;
+tab_menu_button.addEventListener('click', event => {
+	tab_menu_active = !tab_menu_active;
+	tab_menu_button.classList.toggle('active');
+	tab_menu.classList.toggle('active');
+	tab_menu_button.parentElement.parentElement.classList.toggle('active');
+	tab_content.forEach(el => {
+		if (el != tab_menu && el.classList.contains('active')) {
+			tab_menu_active ? active_tab = el : null
+		}
+	})
+	tab_menu_active ? active_tab.classList.remove('active') : active_tab.classList.add('active');
+})

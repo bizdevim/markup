@@ -1,8 +1,24 @@
-.content.profile-tab, .content.social-tab {
+.content.profile-tab, .content.social-tab, .content.tab-menu-tab {
   display: none;
+  padding: 0 1.5rem;
+}
+.content.tab-menu-tab {
+  padding: 0;
 }
 .content.active {
   display: block;
+}
+.content.invisible {
+  display: none;
+}
+
+.content__wrapper {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.16048rem;
+  letter-spacing: 0.0657531px;
+  color: #aeaeb2;
+  padding-bottom: 6.5333rem;
 }
 
 .social_list {
@@ -21,7 +37,7 @@
   margin-right: 0.4167rem;
 }
 .social__item.active .item__name,
-.social__item.active .item__followers {
+.social__item.active .item__counter {
   color: #232325;
 }
 .social__item div:first-of-type {
@@ -39,13 +55,60 @@
   font-size: 1.0833rem;
 }
 
-.item__followers {
+.item__counter {
   font-weight: 400;
   font-size: 1.0833rem;
   letter-spacing: 0.066px;
+  color: #aeaeb2;
 }
 
 .item__link {
   font-weight: 400;
   font-size: 1.0833rem;
+}
+
+.tab-menu__title {
+  font-weight: 600;
+  font-size: 1.16048rem;
+  letter-spacing: 0.0600113px;
+  color: #232325;
+  display: none;
+}
+#tab_menu.active ~ .tab-menu__title {
+  display: block;
+}
+
+.active ~ .followBtn {
+  display: none;
+}
+
+.tab-menu__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  transition: 0.2s ease;
+}
+.tab-menu__item div:first-of-type {
+  display: flex;
+  align-items: center;
+}
+.tab-menu__item div:first-of-type .item__title {
+  margin-left: 0.8333rem;
+}
+.tab-menu__item:hover {
+  background-color: #f5f5f5;
+}
+.tab-menu__item .item__title {
+  font-weight: 600;
+  font-size: 1.16048rem;
+  letter-spacing: 0.0600113px;
+  color: #232325;
+}
+
+.tab-menu-tab {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
 }

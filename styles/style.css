@@ -113,9 +113,14 @@ header a:last-of-type {
   color: #1682f1;
 }
 
+.arrow.active svg {
+  transform: rotate(0deg);
+}
 .arrow svg {
+  transition: 0.2s ease;
   width: 1rem;
   height: 1.6667rem;
+  transform: rotate(180deg);
 }
 
 .header_actions {
@@ -150,6 +155,7 @@ header a:last-of-type {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 100000000000000;
 }
 
 .nav {
@@ -463,6 +469,10 @@ header .dots {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+  border: 1px solid #f9f9f9;
+}
+.follow.active {
+  background: #fff;
 }
 
 .search svg {
@@ -476,9 +486,6 @@ header .dots {
 .follow-left {
   display: flex;
   align-items: center;
-}
-.follow-left button svg {
-  transform: rotate(180deg);
 }
 
 .follow-right {
@@ -555,15 +562,6 @@ header .dots {
   margin-bottom: 2px;
 }
 
-.content {
-  font-weight: 500;
-  font-size: 1.16048rem;
-  letter-spacing: 0.0657531px;
-  color: #aeaeb2;
-  padding: 0 1.5rem;
-  margin-top: 0.0833rem;
-  padding-bottom: 8.3333rem;
-}
 .content .content__item {
   margin-bottom: 1.25rem;
 }
