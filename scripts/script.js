@@ -205,7 +205,7 @@ tab_menu_button.addEventListener('click', event => {
 const content_wrapper = document.querySelector('.content_wrapper');
 content_wrapper.addEventListener("wheel", (event) => {
 	smoothReduce(0.5, 0.01, tabMargin, 0, 2, (value) => {
-		tab_wrapper.scrollLeft += (event.deltaX / 100) * value;
+		content_wrapper.scrollLeft += (event.deltaX / 100) * value;
 	});
 	event.preventDefault();
 });
